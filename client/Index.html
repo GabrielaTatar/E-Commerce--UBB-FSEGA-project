@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <style>
+        body {
+            background-image: url("background.jpeg");
+            background-size: 1300px 600px;
+            background-repeat: no-repeat;
+        }
+        
+        divCasete {
+            background-color: transparent;
+            width: 90%;
+            padding: 50px;
+            margin: 20px;
+            position: fixed;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: tomato;
+            text-decoration: underline;
+            text-transform: uppercase;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 60px;
+        }
+        
+        divClientNou {
+            font-size: 25px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border: 2px solid rgb(255, 142, 142);
+            background-color: salmon;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <form action="Autentificare.php" method="post">
+            <divCasete>
+                <label for="username"><i class="fas fa-user"></i></label>
+                <input type="text" name="username" placeholder="Username" id="username" required>
+
+                <label for="password"><i class="fas fa-lock"></i></label>
+                <input type="password" name="password" placeholder="Password" id="password" required>
+
+                <input style="color: cornflowerblue;" type="submit" value="Login">
+            </divCasete>
+        </form>
+        <divClientNou><a href="Registration.html">Inca nu ai cont? Intra sa-ti faci unul chiar acum</a></divClientNou>
+    </div>
+</body>
+
+</html>
